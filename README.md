@@ -1,5 +1,11 @@
 # Fieldnotes — PM research workspace
 
+**Live website: [Open Fieldnotes](https://fieldnotes-pm-workspace.bizverto-tech.chatgpt.site)**
+
+Fieldnotes is already deployed; no hosting setup or local installation is needed to use it. Sign in with ChatGPT on the live website. See the [current application README](../fieldnotes-public/README.md) for its features and usage instructions.
+
+This directory contains the earlier local prototype. The setup, local accounts and implementation details below apply only to that prototype, not the live website.
+
 Fieldnotes coordinates a research planner, market researcher, competitor analyst, optional customer-notes analyst, synthesizer and evidence reviewer. The live workflow uses the saved project question; the old invoice example is available only through an explicit **View synthetic example** button.
 
 ## Start locally
@@ -70,7 +76,7 @@ apps/backend/tests/                        API, workflow and provider-contract t
 contracts/openapi.json                     Exported API schema
 ```
 
-Authentication remains the local salted-password/HttpOnly-session implementation from milestone 01, with per-project ownership checks. Supabase Auth, file uploads, full report editing, collaborative work, scheduled monitoring, distributed workers and production deployment are future work.
+Authentication in this local prototype remains the salted-password/HttpOnly-session implementation from milestone 01, with per-project ownership checks. Its file uploads, full report editing, collaborative work, scheduled monitoring and distributed workers remain unimplemented here. The public application is already deployed separately at the live URL above.
 
 ## Checks
 
